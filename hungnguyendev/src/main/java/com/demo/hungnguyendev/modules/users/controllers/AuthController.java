@@ -1,6 +1,7 @@
 package com.demo.hungnguyendev.modules.users.controllers;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,9 @@ import com.demo.hungnguyendev.modules.users.requests.LoginRequest;
 import com.demo.hungnguyendev.modules.users.resources.LoginResource;
 import com.demo.hungnguyendev.modules.users.services.interfaces.UserServiceInterface;
 
+import jakarta.validation.Valid;
+
+@Validated
 @RestController
 @RequestMapping("v1/auth")
 public class AuthController {
@@ -21,7 +25,7 @@ public class AuthController {
     }
 
     @PostMapping("login")
-    public ResponseEntity<LoginResource> login(@RequestBody LoginRequest request){
+    public ResponseEntity<LoginResource> login(@Valid @RequestBody LoginRequest request){
         LoginResource auth = userService.login(request);
         return ResponseEntity.ok(auth);
     }
