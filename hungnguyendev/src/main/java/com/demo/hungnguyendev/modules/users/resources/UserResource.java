@@ -1,10 +1,10 @@
-package com.demo.hungnguyendev.modules.users.dtos;
+package com.demo.hungnguyendev.modules.users.resources;
 
-public class UserDTO {
+public class UserResource {
     private final Long id;
     private final String email;
 
-    public UserDTO(Long id, String email){
+    public UserResource(Long id, String email){
         this.id = id;
         this.email = email;
     }

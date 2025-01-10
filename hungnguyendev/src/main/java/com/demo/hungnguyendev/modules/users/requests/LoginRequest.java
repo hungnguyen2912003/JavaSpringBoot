@@ -1,4 +1,4 @@
-package com.demo.hungnguyendev.modules.users.dtos;
+package com.demo.hungnguyendev.modules.users.requests;
 
 public class LoginRequest {
     private String email;

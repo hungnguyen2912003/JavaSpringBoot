@@ -1,10 +1,10 @@
 package com.demo.hungnguyendev.modules.users.services.interfaces;
 
-import com.demo.hungnguyendev.modules.users.dtos.LoginRequest;
-import com.demo.hungnguyendev.modules.users.dtos.LoginResponse;
+import com.demo.hungnguyendev.modules.users.requests.LoginRequest;
+import com.demo.hungnguyendev.modules.users.resources.LoginResource;
 
 public interface UserServiceInterface {
 
-    LoginResponse login(LoginRequest request);
+    LoginResource login(LoginRequest request);
     
 }

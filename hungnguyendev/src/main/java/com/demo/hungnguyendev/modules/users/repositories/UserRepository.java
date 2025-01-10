@@ -1,10 +1,9 @@
 package com.demo.hungnguyendev.modules.users.repositories;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.demo.hungnguyendev.repositories.BaseRepository;
-
 @Repository
-public class UserRepository extends BaseRepository {
+public interface  UserRepository extends JpaRepository<User, Long> {
     
 }

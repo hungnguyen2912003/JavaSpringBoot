@@ -1,10 +1,10 @@
-package com.demo.hungnguyendev.modules.users.dtos;
+package com.demo.hungnguyendev.modules.users.resources;
 
-public class LoginResponse {
+public class LoginResource {
     private String token;
-    private UserDTO user;
+    private UserResource user;
 
-    public LoginResponse(String token, UserDTO user) {
+    public LoginResource(String token, UserResource user) {
         this.token = token;
         this.user = user;
     }
@@ -17,11 +17,11 @@ public class LoginResponse {
         this.token = token;
     }
 
-    public UserDTO getUser() {
+    public UserResource getUser() {
         return user;
     }
 
-    public void setUser(UserDTO user) {
+    public void setUser(UserResource user) {
         this.user = user;
     }
 }
