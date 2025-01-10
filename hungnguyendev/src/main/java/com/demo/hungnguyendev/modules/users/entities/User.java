@@ -43,20 +43,4 @@ public class User {
     protected void onUpdated() {
         this.updatedAt = LocalDateTime.now();
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getUser_catalogue_id() {
-        return user_catalogue_id;
-    }
-
-    public void setUser_catalogue_id(Long user_catalogue_id) {
-        this.user_catalogue_id = user_catalogue_id;
-    }
 }
