@@ -11,6 +11,9 @@ public class jwtConfig {
     @Value("${jwt.expiration}")
     private long expirationTime;
 
+    @Value("${jwt.issuer}")
+    private String issuer;
+
     public String getSecretKey() {
         return secretKey;
     }
@@ -25,5 +28,13 @@ public class jwtConfig {
 
     public void setExpirationTime(long expirationTime) {
         this.expirationTime = expirationTime;
+    }
+
+    public String getIssuer() {
+        return issuer;
+    }
+
+    public void setIssuer(String issuer) {
+        this.issuer = issuer;
     }
 }
